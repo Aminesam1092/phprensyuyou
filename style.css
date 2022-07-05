@@ -753,3 +753,6 @@ footer p {
         display: block;
     }
 }
+.title{
+    cursor: pointer;
+}

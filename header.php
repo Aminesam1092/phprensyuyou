@@ -16,8 +16,8 @@
         <header>
             <div class="headerwrapper">
                 <hgroup>
-                    <h1>Flowers</h1>
-                    <h2>-hanakotoba-</h2>
+                    <h1 class="title">Flowers</h1>
+                    <h2 class="title">-hanakotoba-</h2>
                 </hgroup>
                 <div class="spnavbtn sp">
                     <img src="images/menu.svg" alt="">
