@@ -13,18 +13,18 @@
     <header>
       <div class="headerwrapper">
         <hgroup>
-          <h1>Flowers</h1>
-          <h2>-Hanakotoba-</h2>
+          <h1><a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?>"></a></h1>
+          <h2><?php bloginfo('description'); ?></h2>
         </hgroup>
         <div class="spnavbtn sp">
-          <img src="images/menu.svg" alt="">
+          <img src="<?php echo get_theme_file_uri(); ?>/images/menu.svg" alt="">
         </div>
         <div class="navcontent pc">
           <?php get_search_form(); ?>
           <nav>
             <ul>
-              <li>Top</li>
-              <li>Flowers</li>
+              <li><a href="<?php echo esc_url(home_url('/')); ?>">Top</a></li>
+              <li><a href="<?php echo esc_url(home_url('/category')); ?>">Flowers</a></li>
               <li>About</li>
               <li>Contact</li>
             </ul>
@@ -36,8 +36,8 @@
               <li>
               <?php get_search_form(); ?>
               </li>
-              <li>Top</li>
-              <li>Flowers</li>
+              <li><a href="<?php echo esc_url(home_url('/')); ?>">Top</a></li>
+              <li><a href="<?php echo esc_url(home_url('/category')); ?>">Flowers</a></li>
               <li>About</li>
               <li>Contact</li>
             </ul>

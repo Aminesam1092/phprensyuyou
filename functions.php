@@ -13,3 +13,17 @@ function theme_setup(){
   add_theme_support('post-thumbnails');//アイキャッチ画像を有効にする
 }
 add_action('after_setup_theme','theme_setup');//フックポイントを指定して実行したい関数を指定する
+
+function change_posts_per_page($query) {
+  //ページ毎に表示投稿数などを変更する
+  if( is_admin() || ! $query->is_main_query()){
+    return;
+  }
+    //トップページの投稿表示件数を9件にする
+    if( $query->is_home()){
+      $query->set('posts_per_page','9');
+      //$query->set()は複数利用可能
+    }
+    
+}
+add_action('pre_get_posts','change_posts_per_page');
